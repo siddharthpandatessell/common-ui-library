@@ -14,15 +14,16 @@ export interface ButtonProps extends MuiButtonProps {
   label: string;
 }
 
-const Button = ({ label, ...rest }: ButtonProps) => (
+export const Button = ({ label, ...rest }: ButtonProps) => (
   <MuiButton {...rest}>{label}</MuiButton>
 );
 
+
 export default Button;
 
-Button.defaultProps = {
-  sx:{},
-  variant: "contained",
-  size: "medium",
-  color: "primary",
-};
+// Button.defaultProps = {
+//   sx:{},
+//   variant: "contained",
+//   size: "medium",
+//   color: "primary",
+// };
