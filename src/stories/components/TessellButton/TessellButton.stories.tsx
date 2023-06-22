@@ -1,11 +1,14 @@
 import React from "react";
 import type { Meta, StoryObj } from "@storybook/react";
 import TessellButton from './TessellButton';
+import { withActions } from '@storybook/addon-actions/decorator';
+
 
 // Default metadata of the story https://storybook.js.org/docs/react/api/csf#default-export
 const meta: Meta<typeof TessellButton> = {
   title: "Components/TessellButton",
   component: TessellButton,
+  tags: ['autodocs'],
   argTypes: {
     // textColor: { control: "color" },
     // onClick: { action: "clicked" },
@@ -18,6 +21,12 @@ const meta: Meta<typeof TessellButton> = {
       options: ['outlined', 'text', 'contained']
     }
   },
+  parameters: {
+    actions: {
+      handles: ['mouseover', 'click .btn'],
+    },
+  },
+  decorators: [withActions],
 };
 
 export default meta;

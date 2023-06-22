@@ -4,9 +4,26 @@ const config: StorybookConfig = {
   addons: [
     "@storybook/addon-links",
     "@storybook/addon-essentials",
-    "@storybook/addon-interactions",
     '@storybook/addon-styling',
     '@storybook/addon-actions',
+    "@storybook/addon-interactions",
+    // '@storybook/addon-storysource',
+    {
+      name: '@storybook/addon-storysource',
+      options: {
+        loaderOptions: {
+          injectStoryParameters: true,
+        },
+      },
+    },
+    {
+      name: '@storybook/addon-docs',
+      options: {
+        sourceLoaderOptions: {
+          injectStoryParameters: false,
+        },
+      },
+    },
     {
       name: '@storybook/addon-styling',
       options: {},
