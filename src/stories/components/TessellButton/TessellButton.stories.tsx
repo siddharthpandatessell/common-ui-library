@@ -67,3 +67,10 @@ export const ButtonGroup: Story = {
     <TessellButton label="Test 3"  variant="text" />
   </div>
 };
+
+Secondary.parameters = {
+  design: {
+    type: "figma",
+    url: "https://www.figma.com/file/Xb2JIrQdlJ0lgWkugyItQo/Mongo-DB?type=design&node-id=1-355&mode=dev",
+  },
+};

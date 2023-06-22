@@ -7,6 +7,8 @@ const config: StorybookConfig = {
     '@storybook/addon-styling',
     '@storybook/addon-actions',
     "@storybook/addon-interactions",
+    '@storybook/addon-links',
+    "storybook-addon-designs",
     // '@storybook/addon-storysource',
     {
       name: '@storybook/addon-storysource',
