@@ -1,7 +1,6 @@
 import React from "react";
 import classNames from "classnames";
 import "./button.css";
-
 export interface ButtonProps {
   /**
    * Is this the principal call to action on the page?
