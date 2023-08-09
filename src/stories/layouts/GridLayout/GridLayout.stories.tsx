@@ -1,6 +1,7 @@
 import React from "react";
 import type { Meta, StoryObj } from "@storybook/react";
 import GridLayout from "./GridLayout";
+import TessellButton from "../../components/TessellButton/TessellButton";
 
 // Default metadata of the story https://storybook.js.org/docs/react/api/csf#default-export
 const meta: Meta<typeof GridLayout> = {
@@ -20,6 +21,8 @@ type Story = StoryObj<typeof GridLayout>;
 export const Primary: Story = {
   args: {
     backgroundColor: 'red',
-    content: 'Hi, from Test layout component'
+    content: [<TessellButton label="Test 1"  variant="outlined" />,
+    <TessellButton label="Test 2"  variant="contained" />,
+    <TessellButton label="Test 3"  variant="text" />]
   },
 };

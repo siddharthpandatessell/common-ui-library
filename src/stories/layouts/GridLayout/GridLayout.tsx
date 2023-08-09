@@ -9,7 +9,7 @@ export interface GridLayoutProps {
   /**
    * Button contents
    */
-  content: string;
+  content: React.ReactNode[];
   /**
    * Optional click handler
    */
