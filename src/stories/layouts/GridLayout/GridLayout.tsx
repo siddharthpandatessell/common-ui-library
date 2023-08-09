@@ -9,7 +9,7 @@ export interface GridLayoutProps {
   /**
    * Button contents
    */
-  content: React.ReactNode[];
+  content: React.ReactNode;
   /**
    * Optional click handler
    */
@@ -19,8 +19,8 @@ export interface GridLayoutProps {
 const GridLayout = (props: GridLayoutProps) => {
   return (
     <div className="row">
-      <div className="column" style={{backgroundColor: props.backgroundColor}}>{props.content}</div>
-      <div className="column" style={{ backgroundColor: props.backgroundColor }}>
+      <div className="column" style={{float: 'left', backgroundColor: 'aquamarine', width: '50%', minHeight: '100vh'}}>{props.content}</div>
+      <div className="column" style={{float: 'left', backgroundColor: 'red', width: '50%', minHeight: '100vh'}}>
   {props.content}
 </div>
     </div>
